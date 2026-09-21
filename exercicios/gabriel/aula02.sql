@@ -5,10 +5,10 @@
 -- Nao apague os marcadores, nao troque a ordem.
 -- Cada bloco roda num banco em branco: crie o que voce for usar.
 
--- ex1
+-- ex1git
 
 
--- ex2
+-- ex2 gabriel lindao - JOnas
 
 
 -- ex3
