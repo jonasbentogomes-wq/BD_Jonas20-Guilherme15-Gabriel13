@@ -28,4 +28,14 @@ Qual é o par de entidades que se cruza muitos-para-muitos, e qual dado nasce
 **do encontro** entre elas (e não de nenhum dos dois lados)?
 
 - DIARIO - JOGOS
+- JOGOS - METAS
+
+## ATRIBUTOS (Gabriel)
+
+- DIARIO = ID_diario, data, titulo
+- JOGOS = ID_jogo, nome, plataforma, data
+- CONQUISTAS = ID_conquista, nome, tempo, jogo, descricao
+- FEITOS = ID_feitos, data_registro, descricao
+- METAS = ID_metas, descricao, data_metas
+- PLANOS = ID_planos, descricao, data_limite
 
