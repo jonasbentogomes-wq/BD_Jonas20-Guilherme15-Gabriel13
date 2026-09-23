@@ -5,8 +5,17 @@
 -- Nao apague os marcadores, nao troque a ordem.
 -- Cada bloco roda num banco em branco: crie o que voce for usar.
 
--- ex1git
-felca gosta de PINTO
+-- ex1
+
+CREATE TABLE Livro(
+
+ID INT AUTO_INCREMENT PRIMARY KEY,
+Titulo TEXT NOT NULL,
+Autor TEXT NOT NULL,
+Ano INT,
+Exemplares INT NOT NULL DEFAULT 1
+
+);
 
 -- ex2 
 
