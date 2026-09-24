@@ -17,7 +17,28 @@ Exemplares INT NOT NULL DEFAULT 1
 
 );
 
+INSERT INTO Livro (Titulo, Autor, Ano, Exemplares)
+VALUES ('O arqueiro', 'Bernard Cornwell', 2011, 1),
+       ('O herege', 'Bernard Cornwell', 2010, 1);
+
 -- ex2 
+
+CREATE TABLE Leitor(
+
+ID INT AUTO_INCREMENT PRIMARY KEY,
+Nome TEXT NOT NULL
+
+);
+
+INSERT INTO Leitor (Nome)
+VALUES ('Gabriel'),
+       ('Conrado'),
+       ('João');
+
+       ALTER TABLE Leitor
+       ADD Telefone VARCHAR(20);
+
+       SELECT * FROM Leitor;
 
 
 -- ex3
