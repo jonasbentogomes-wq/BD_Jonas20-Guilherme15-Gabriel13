@@ -43,6 +43,20 @@ VALUES ('Gabriel'),
 
 -- ex3
 
+CREATE TABLE Emprestimo(
+
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Id_livro INT NOT NULL
+
+);
+
+INSERT INTO Emprestimo (Id_livro)
+VALUES (1),
+       (2);
+
+       ALTER TABLE Emprestimo
+       ADD Situacao TEXT NOT NULL DEFAULT 'Ativo'
+
 
 -- ex4
 
