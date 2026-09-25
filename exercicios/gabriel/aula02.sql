@@ -6,7 +6,7 @@
 -- Cada bloco roda num banco em branco: crie o que voce for usar.
 
 -- ex1git
-felca gosta de PINTO
+
 
 -- ex2 
 
