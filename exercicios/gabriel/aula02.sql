@@ -5,6 +5,10 @@
 -- Nao apague os marcadores, nao troque a ordem.
 -- Cada bloco roda num banco em branco: crie o que voce for usar.
 
+<<<<<<< HEAD
+-- ex1git
+
+=======
 -- ex1
 
 CREATE TABLE Livro(
@@ -20,6 +24,7 @@ Exemplares INT NOT NULL DEFAULT 1
 INSERT INTO Livro (Titulo, Autor, Ano, Exemplares)
 VALUES ('O arqueiro', 'Bernard Cornwell', 2011, 1),
        ('O herege', 'Bernard Cornwell', 2010, 1);
+>>>>>>> 05bec1ac508a666d24b4899bac7bedf17781d63a
 
 -- ex2 
 
