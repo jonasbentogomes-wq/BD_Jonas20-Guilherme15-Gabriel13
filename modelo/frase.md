@@ -1,41 +1,41 @@
 # O caso do trio
 
-**Integrantes:**
+**Integrantes:** Jonas, Guilherme e Gabriel
 
-**Turma:**
-
----
+**Turma:** —
 
 ## Em uma frase
 
-> "Preciso de um diario, para os meus jogos, para saber minhas conquistas, meus feitos, minhas metas e meus planos."
+> "Preciso de um diário pessoal para registrar meus jogos, conquistas, feitos,
+> metas e planos."
 
 ## As entidades
 
-Cada substantivo da frase que tem vida própria e que você precisa guardar mais
-de um. Liste aqui, um por linha, com dois ou três atributos de cada:
+Cada entidade abaixo tem vida própria no diário e será representada por uma
+tabela no modelo lógico:
 
-- DIARIO
-- JOGOS
-- CONQUISTAS
-- FEITOS
-- METAS
-- PLANOS
+- **JOGADOR:** nome, data de criação.
+- **DIARIO:** título, data de criação, jogador responsável.
+- **JOGO:** nome, plataforma, gênero.
+- **CONQUISTA:** título, descrição, data da conquista, jogo.
+- **FEITO:** descrição, data de realização, jogador e jogo relacionado.
+- **META:** descrição, data de definição, prazo, status, jogador.
+- **PLANO:** descrição, data de criação, prazo, status, jogador.
+
+Um jogador pode ter um diário, e o diário pode registrar vários jogos. O mesmo
+jogo pode aparecer em mais de um diário.
 
 ## O N:N com atributo próprio
 
-Qual é o par de entidades que se cruza muitos-para-muitos, e qual dado nasce
-**do encontro** entre elas (e não de nenhum dos dois lados)?
+O par muitos-para-muitos é **DIARIO e JOGO**, representado pela tabela
+associativa **DIARIO_JOGO**. Os dados que nascem do encontro são
+`data_registro`, `horas_jogadas` e `status_no_diario`; eles descrevem o registro
+daquele jogo naquele diário, e não o diário ou o jogo isoladamente.
 
-- DIARIO - JOGOS
-- JOGOS - METAS
+## Tabelas associativas
 
-## ATRIBUTOS (Gabriel)
-
-- DIARIO = ID_diario, data, titulo
-- JOGOS = ID_jogo, nome, plataforma, data
-- CONQUISTAS = ID_conquista, nome, tempo, jogo, descricao
-- FEITOS = ID_feitos, data_registro, descricao
-- METAS = ID_metas, descricao, data_metas
-- PLANOS = ID_planos, descricao, data_limite
-
+- **DIARIO_JOGO:** liga `DIARIO` a `JOGO` e guarda os atributos próprios do
+  registro.
+- Não há uma associativa para CONQUISTA, FEITO, META ou PLANO: cada registro
+  pertence diretamente ao jogador e, quando aplicável, ao jogo por meio de uma
+  chave estrangeira.
