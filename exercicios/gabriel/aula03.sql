@@ -6,6 +6,11 @@
 -- Os blocos rodam sobre o banco da secretaria ja carregado.
 
 -- ex1
+PRAGMA foreign_keys = ON
+
+INSERT INTO TURMA ()
+
+
 
 -- ex2
 
